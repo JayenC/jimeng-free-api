@@ -18,10 +18,10 @@ process.on("exit", () => {
     logger.footer();
 });
 // 进程被kill
-process.on("SIGTERM", () => {
-    logger.warn("received kill signal");
-    process.exit(2);
-});
+// process.on("SIGTERM", () => {
+//     logger.warn("received kill signal");
+//     process.exit(2);
+// });
 // Ctrl-C进程退出
 process.on("SIGINT", () => {
     process.exit(0);
